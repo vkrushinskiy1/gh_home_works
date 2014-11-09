@@ -20,15 +20,15 @@
     car1.mark = @"BMW";
     [car1 printCarIformation];
     
-    GHCar *AnotherCar = [[GHCar alloc] initWithEngineCapacity:2.4 andHorsePower:180];
-    AnotherCar.topSpeed = 225.0;
-    AnotherCar.mark = @"Audi";
-    [AnotherCar printCarIformation];
+    GHCar *AnotherCar3 = [[GHCar alloc] initWithEngineCapacity:2.4 andHorsePower:180];
+    AnotherCar3.topSpeed = 225.0;
+    AnotherCar3.mark = @"Audi";
+    [AnotherCar3 printCarIformation];
     
-    if ([car1 isFasterThanCar:AnotherCar]) {
+    if ([car1 isFasterThanCar:AnotherCar3]) {
         NSLog(@"%@ is faster. speed - %0.0f", car1.mark, car1.topSpeed);
     } else {
-        NSLog(@"%@ is faster. speed - %0.0f", AnotherCar.mark, AnotherCar.topSpeed);
+        NSLog(@"%@ is faster. speed - %0.0f", AnotherCar3.mark, AnotherCar3.topSpeed);
     }
     
     
